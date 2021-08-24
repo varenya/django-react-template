@@ -1,0 +1,13 @@
+{
+  "polls/js/index.jsx": {
+    "file": "assets/poll.864a8f04.js",
+    "src": "polls/js/index.jsx",
+    "isEntry": true,
+    "imports": [
+      "_vendor.9b10ce62.js"
+    ]
+  },
+  "_vendor.9b10ce62.js": {
+    "file": "assets/vendor.9b10ce62.js"
+  }
+}

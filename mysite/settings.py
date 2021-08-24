@@ -27,13 +27,20 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-STATIC_URL = '/static/'
 
 # Application definition
 
+# Where ViteJS assets are built.
+DJANGO_VITE_ASSETS_PATH = BASE_DIR / "static" / "dist"
+
+# If use HMR or not.
+DJANGO_VITE_DEV_MODE = DEBUG
+
+
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    DJANGO_VITE_ASSETS_PATH
 ]
+
 
 INSTALLED_APPS = [
     'polls',
@@ -43,6 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_vite',
 ]
 
 MIDDLEWARE = [
